@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 3rem;
+            min-height: 100vh;
+            background-color: lightgrey;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 6px;
+            padding: 1.5rem;
+            background-color: #D9412C;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .hide-btn {
+            opacity: .7;
+            transition: opacity 500ms;
+        }
+
+        .hide-btn:hover {
+            opacity: 1;
+        }
+
+        .hide-btn:focus {
+            opacity: 0;
+        }
+
+        .color-btn {
+            /* transition: all 2000ms ease-in-out; */
+
+            /* Heshs solution: */
+            /* transition: color, background-color, padding;
+            transition-duration: 500ms; */
+
+            /* simplest transition? */
+            transition: 500ms;
+        }
+
+        .color-btn:hover {
+            padding: 2rem;
+        }
+
+        .color-btn:focus {
+            background-color: #1B213C;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="hide-btn btn">Click here to hide me</button>
+    <button class="color-btn btn">Click me to change color</button>
+</body>
+</html>
