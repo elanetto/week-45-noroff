@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Transition with Hesh - 8th nov 2023</title>
+    <style>
+        .my-container {
+            background-color: #AA1111;
+            color: #FFF;
+            font-size: 3rem;
+            width: 400px;
+            height: 400px;
+
+            /* transition: 1s;
+            transition: 500ms; */
+            
+            /* transition: background-color 1000ms;
+            transition-property: background-color;
+            transition-duration: 1s; */
+            /* transition: all 2000ms linear; */
+            /* transition: all 2000ms ease-in; */
+            transition: all 2000ms ease-out;
+            /* transition: all 2000ms ease-in-out; */
+
+            transition: color 1s, background-color 2s, 1000ms ease-in-out;
+        }
+
+        .my-container:hover {
+            background: #BADA55;
+            color: black;
+        }
+
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="css-animation.html">CSS-animation</a></li>
+            <li><a href="transition-btn-example.html">Transition-btn</a></li>
+            <li><a href="transition.html">Transition</a></li>
+            <li><a href="transition-with-hesh.html">Transition-with-hesh</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="content-box">
+        <div class="my-container">
+            My div is here
+        </div>
+    </div>
+</body>
+</html>
