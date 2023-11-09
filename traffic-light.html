@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
-    <title>CSS Animation - The last CSS class (said Hesh) - 9th of nov 2023</title>
+    <title>Traffic light</title>
     <style>
 
         @keyframes fadeIn {
@@ -24,14 +24,42 @@
         .fade-in-box {
             width: 200px;
             height: 200px;
-            background-color: #2C7DFA;
+            background-color: red;
+            border-radius: 100%; /* creates a circle */
             animation-name: fadeIn; /*refers to the keyframe name */
             animation-duration: 3s; /* durantion: complete animation */
             animation-timing-function: ease-in-out; /* start slow and then... */
             animation-iteration-count: infinite; /* Will repeat the animation forever */
         }
 
+        .fade-in-box:hover {
+            animation-play-state: paused;
+        }
 
+        .light-1 {
+            background-color: red;
+            animation-duration: 1s;
+        }
+        .light-2 {
+            background-color: yellow;
+            animation-duration: 2s;
+        }
+        .light-3 {
+            background-color: green;
+            animation-duration: 3s;
+        }
+
+        .traffic-light {
+            background-color: black;
+            border-radius: 1rem;
+            width: 300px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
 
     </style>
 </head>
@@ -52,9 +80,12 @@
     </nav>
 </header>
 <body>
-    <div class="content-box">
-
-        <div class="fade-in-box"></div>
+    <div class="content-box btn-direction">
+        <div class="traffic-light">
+            <div class="fade-in-box light-1"></div>
+            <div class="fade-in-box light-2"></div>
+            <div class="fade-in-box light-3"></div>
+        </div>
 
 
     </div>

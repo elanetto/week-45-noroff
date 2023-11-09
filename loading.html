@@ -8,9 +8,32 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script src="https://kit.fontawesome.com/cfcc846d5b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Week 45 - Noroff</title>
+    <title>Loading: Spinner</title>
+    <style>
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotating-spinner {
+            width: 200px;
+            height: 200px;
+            background-image: url(assets/images/5cm_sticker_0002_Layer-22.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+       
+    </style>
 </head>
 <header>
     <nav>
@@ -27,37 +50,12 @@
             <li><a href="loading.html">Loading</a></li>
         </ul>
     </nav>
-    <div class="mobile-nav">
-        <div class="droptown">
-            <button class="drop-btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="button.html">Button</a>
-                <a href="css-animation.html">CSS-animation</a>
-                <a href="transition-btn-example.html">Transition-btn</a>
-                <a href="transition.html">Transition</a>
-                <a href="transition-with-hesh.html">Transition-with-hesh</a>
-                <a href="traffic-light.html">Traffic-light</a>
-                <a href="bouncing-ball.html">Bouncing ball</a>
-                <a href="pulse.html">Pulse</a>
-                <a href="loading.html">Loading</a>
-            </div>
-        </div>
-    </div>
 </header>
 <body>
-    <div class="content-box">
-        <div class="content-text">
-            <h1>Check it out</h1>
-            <p>Check out the CSS we learned in week 45 at Noroff.</p>
-        </div>
-        <div class="content-img">
-            <img src="assets/images/5cm_sticker_0002_Layer-22.png" alt="Hello there">
-        </div>
-    </div>
+    <div class="content-box btn-direction">
 
-    
+        <div class="rotating-spinner"></div>
+        
+    </div>
 </body>
 </html>
