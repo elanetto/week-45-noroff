@@ -26,6 +26,11 @@ a {
     padding: 2rem;
 }
 
+.active {
+    background-color: orchid;
+    color: #FFF;
+}
+
 nav ul li:hover {
     background-color: orchid;
     font-weight: 600;
