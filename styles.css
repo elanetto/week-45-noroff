@@ -48,6 +48,59 @@ nav ul li:hover {
     gap: 2rem;
 }
 
+.mobile-nav {
+    background-color: blueviolet;
+    color: #FFF;
+}
+
+.drop-btn {
+    background-color: blueviolet;
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blueviolet;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: orchid;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .drop-btn {
+    background-color: orchid;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+
 
 
 /* Small (sm) */
