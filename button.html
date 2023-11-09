@@ -4,20 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <style>
         * {
             box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 3rem;
-            min-height: 100vh;
-            background-color: lightgrey;
         }
 
         .btn {
@@ -64,8 +55,22 @@
         }
     </style>
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="css-animation.html">CSS-animation</a></li>
+            <li><a href="transition-btn-example.html">Transition-btn</a></li>
+            <li><a href="transition.html">Transition</a></li>
+            <li><a href="transition-with-hesh.html">Transition-with-hesh</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
-    <button class="hide-btn btn">Click here to hide me</button>
-    <button class="color-btn btn">Click me to change color</button>
+    <div class="content-box btn-direction">
+        <button class="hide-btn btn">Click here to hide me</button>
+        <button class="color-btn btn">Click me to change color</button>
+    </div>
 </body>
 </html>
